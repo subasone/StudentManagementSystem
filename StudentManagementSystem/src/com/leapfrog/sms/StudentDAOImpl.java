@@ -82,14 +82,15 @@ public class StudentDAOImpl {
 
     public void delete() {
         System.out.println("Delete");
+        showAll();
         System.out.println("Do you want to delete this name: ");
         String name = input.next();
-        int counter1 = 0;
+        //int counter1 = 0;
         for (int i = 0; i < names.length; i++) {
             if (name.equals(names[i])) {
                 names[i] = null;
                 counter--;
-                counter1 = 1;
+               // counter1 = 1;
                 break;
 
             }
